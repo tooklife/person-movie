@@ -7,50 +7,57 @@ import City from '../components/City/City.vue'
 import NowPlaying from '../components/NowPlaying/NowPlaying.vue'
 import ComingSoon from '../components/ComingSoon/ComingSoon.vue'
 import Search from '../components/Search/Search.vue'
+import Detail from '../view/Movie/detail.vue'
 
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path:'/',
-      redirect:'/movie'
+  base: process.env.BASE_URL,
+  routes: [{
+      path: '/',
+      redirect: '/movie/nowPlaying'
     },
     {
-      path:'/movie',
-      component:Movie,
-      children:[
-        {
-          path:'/movie',
-          redirect:'/movie/nowPlaying'
+      path: '/movie',
+      component: Movie,
+      children: [{
+          path: '/movie',
+          redirect: '/movie/nowPlaying'
         },
         {
-          path:'city',
+          path: 'city',
           component: City
         },
         {
-          path:'nowPlaying',
+          path: 'nowPlaying',
           component: NowPlaying
         },
         {
-          path:'comingSoon',
+          path: 'comingSoon',
           component: ComingSoon
         },
         {
-          path:'search',
-          component:Search
+          path: 'search',
+          component: Search
         }
+
       ]
     },
     {
-      path:'/cinema',
-      component:Cinema
+      path: '/cinema',
+      component: Cinema
     },
     {
-      path:'/mine',
-      component:Mine
+      path: '/mine',
+      component: Mine
+    },
+    {
+      path: '/movie/detail/:movieId',
+      components: {
+        detail: Detail
+      }
     }
   ],
-  linkActiveClass:'mui-active'
+  linkActiveClass: 'mui-active'
 })

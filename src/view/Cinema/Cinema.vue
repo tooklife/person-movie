@@ -31,10 +31,16 @@ export default {
 .cinema_menu{
     width: 100%;
     height: 45px;
+    font-size: 15px;
     border-bottom: 1px solid #e6e6e6;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background: white;
+    background: #f1f1f1;
+    position: fixed;
+    margin-top: 0px;
+}
+.iconfont{
+    font-size: 11px;
 }
 </style>

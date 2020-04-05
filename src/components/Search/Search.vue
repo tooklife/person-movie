@@ -73,6 +73,7 @@ export default {
 .search_body{
     flex: 1;
     overflow: auto;
+    margin-top: 44px;
 }
 .search_body .search_input{
     padding:8px 10px;
@@ -89,12 +90,13 @@ export default {
     font-size: 16px;
     padding: 4px 0;
 }
-.search_body .search_input_wrapper input{
+.search_body .search_input_wrapper input[type=text]{
     border: none;
     font-size: 13px;
     color: #333;
     padding: 4px 0;
     outline: none;
+    width: 92%;
 }
 .search_body .search_result h3{
     font-size: 15px;

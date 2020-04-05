@@ -1,19 +1,22 @@
 <template>
-        <mt-header fixed title="喵喵影院"></mt-header>
+  <mt-header fixed
+             title="私人影院">
+    <slot></slot>
+  </mt-header>
 </template>
 
 <script>
-import { Header } from 'mint-ui';
-import Vue from 'vue'
-
-Vue.component(Header.name, Header);
-
+import '../../../node_modules/mint-ui/lib/style.css'
+import Vue from 'vue';
 
 export default {
-    name:'Header'
+  name: 'Header'
 }
 </script>
 
-<style>
-
+<style scoped>
+.mint-header {
+  background-color: #f03d37;
+  z-index: 1;
+}
 </style>

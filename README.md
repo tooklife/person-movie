@@ -1,21 +1,38 @@
-# movie
+城市页面无法使用滑动（已解决）
+选中地点数据无法重新刷新渲染
+头部和底部样式优化（减少样式的干扰）（已解决）
+使用sass样式预处理器
+影院的刷新功能（已解决）
+城市页面右边栏样式
+城市页面右边字母选中无法跳转
 
-> A Vue.js project
 
-## Build Setup
+可修复的地方：
+1.页面跳转加入动画
+2.弹窗提示加入动画
 
-``` bash
-# install dependencies
-npm install
+可添加功能：
+1.电影和影院下拉加载更多
+2.
 
-# serve with hot reload at localhost:8080
-npm run dev
 
-# build for production with minification
-npm run build
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+项目结构：
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+主页面：
+Mine：我的页面
+Movie：电影页面
+Cinema：影院页面
+
+组件：
+CiList：影院渲染组件
+City：城市渲染组件
+ComingSoon：即将上映组件
+Header：头部组件
+JS：城市切换提醒组件
+Loading：数组加载时显示的组件
+Login：登陆组件
+NowPlaying：正在热映组件
+Scroller：页面滑动组件
+Search：搜索组件
+Tabbar：底部组件
