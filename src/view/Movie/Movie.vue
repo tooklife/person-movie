@@ -38,34 +38,43 @@ export default {
   },
   mounted () {
     var that = this;
-    setTimeout(() => {
-      this.$ajax.get("/api/getLocation").then(res => {
-        var msg = res.data.msg;
-        if (msg === "ok") {
-          var nm = res.data.data.nm;
-          var id = res.data.data.id;
-          // if (window.localStorage.getItem('cityId') == id) {
-          //   return;
-          // } else {
-          messageBox({
-            title: "定位",
-            content: nm,
-            cancel: "取消",
-            ok: "切换",
-            handleOk () {
+    let id = this.$store.state.city.id;
 
-              that.$store.commit("city/CITY_INFO", { nm, id });
-              window.localStorage.setItem('cityId', id);
-              window.localStorage.setItem('cityNm', nm);
+    // 此处需要获取状态进行判断
+    if (window.localStorage.getItem('cityId') == id) {
+        return;
+    }else{
+        setTimeout(() => {
+          this.$ajax.get("/api/getLocation").then(res => {
+            var msg = res.data.msg;
+            if (msg === "ok") {
+              var nm = res.data.data.nm;
+              id = res.data.data.id;
+              // if (window.localStorage.getItem('cityId') == id) {
+              //   return;
+              // } else {
+              messageBox({
+                title: "定位",
+                content: nm,
+                cancel: "取消",
+                ok: "切换",
+                handleOk () {
 
-              // window.location.reload();
+                  that.$store.commit("city/CITY_INFO", { nm, id });
 
+                  // 此处需要修改状态  而不是修改本地存储
+                  window.localStorage.setItem('cityId', id);
+                  window.localStorage.setItem('cityNm', nm);
+
+                  // window.location.reload();
+
+                }
+              });
+              // }
             }
           });
-          // }
-        }
-      });
-    }, 2000);
+        }, 2000);
+    }
   }
 };
 </script>
