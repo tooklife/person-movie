@@ -1,48 +1,45 @@
 <template>
-  <div class="movie_body">
-    <div class="movie_content"
-         ref="movie_content">
-      <Loading v-if="isLoading" />
-      <Scroller v-else
-                :handleToScroll="handleToScroll"
-                :handleToTouchEnd="handleToTouchEnd">
-        <ul>
-          <li><span>{{pullDown}}</span></li>
-          <li v-for="item in comingList"
-              :key="item.id">
-            <div class="pic_show"
-                 @tap="handleToDetail">
-              <img :src="item.img | setWH('128.180')"
-                   alt>
-            </div>
-            <div class="info_list">
-              <h2>{{ item.nm }}</h2>
-              <p>
-                观众评:
-                <span class="grade">{{ item.sc }}</span>
-              </p>
-              <p>主演:{{ item.star }}</p>
-              <p>{{ item.showInfo }}</p>
-            </div>
-            <div class="btn_pre">预售</div>
-          </li>
-        </ul>
-      </Scroller>
+    <div class="movie_body">
+        <div class="movie_content" ref="movie_content">
+        <Loading v-if="isLoading" />
+        <Scroller v-else :handleToScroll="handleToScroll" :handleToTouchEnd="handleToTouchEnd">
+            <ul>
+                <li>
+                    <span>{{pullDown}}</span>
+                </li>
+            <li v-for="item in comingList" :key="item.id">
+                <div class="pic_show" @tap="handleToDetail">
+                    <img :src="item.img | setWH('128.180')" alt />
+                </div>
+                <div class="info_list">
+                    <h2>{{ item.nm }}</h2>
+                <p>
+                    <span class="grade">{{ item.wantSee }}</span>
+                    人想看
+                </p>
+                <p>类型: {{item.type}}</p>
+                <p>主演:{{ item.star }}</p>
+                <p>{{ item.showInfo }}</p>
+                </div>
+                <div class="btn_pre">预售</div>
+            </li>
+            </ul>
+        </Scroller>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
   name: "ComingSoon",
-  data () {
+  data() {
     return {
       comingList: [],
       pullDown: "",
       isLoading: true
     };
   },
-  mounted () {
+  mounted() {
     this.$ajax
       .get("/api/movieComingList?cityId=" + this.$store.state.city.id)
       .then(res => {
@@ -54,23 +51,25 @@ export default {
       });
   },
   methods: {
-    handleToDetail () {
+    handleToDetail() {
       console.log("handleToDetail");
     },
-    handleToScroll (pos) {
+    handleToScroll(pos) {
       if (pos.y > 30) {
         this.pullDown = "正在更新";
       }
     },
-    handleToTouchEnd (pos) {
+    handleToTouchEnd(pos) {
       if (pos.y > 30) {
-        this.$ajax.get("/api/movieOnInfoList?cityId=" + this.$store.state.city.id).then(res => {
-          this.pullDown = "更新成功";
-          setTimeout(() => {
-            this.movieList = res.data.data.movieList;
-            this.pullDown = "";
-          }, 1000);
-        });
+        this.$ajax
+          .get("/api/movieOnInfoList?cityId=" + this.$store.state.city.id)
+          .then(res => {
+            this.pullDown = "更新成功";
+            setTimeout(() => {
+              this.movieList = res.data.data.movieList;
+              this.pullDown = "";
+            }, 1000);
+          });
       }
     }
   }
@@ -110,10 +109,12 @@ export default {
 }
 .movie_body .pic_show {
   width: 80px;
-  height: 100px;
+  height: 90px;
+  overflow: hidden;
 }
 .movie_body .pic_show img {
   width: 100%;
+  border-radius: 3px;
 }
 .movie_body .info_list {
   margin-left: 10px;
@@ -129,9 +130,9 @@ export default {
   text-overflow: ellipsis;
 }
 .movie_body .info_list p {
-  font-size: 13px;
+  font-size: 12px;
   color: #666;
-  line-height: 28px;
+  line-height: 20px;
   width: 150px;
   overflow: hidden;
   white-space: nowrap;
@@ -141,7 +142,7 @@ export default {
 .movie_body .info_list .grade {
   font-weight: 700px;
   color: #faaf00;
-  font-size: 15px;
+  font-size: 13px;
 }
 .movie_body .info_list img {
   width: 50px;

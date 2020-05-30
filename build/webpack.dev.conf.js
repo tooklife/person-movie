@@ -10,6 +10,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
+// new start
+const express = require('express')
+const app = express()
+let cinemaList = require('../static/data/Cinema/cinemaList.json')
+let cityList = require('../static/data/Movie/cityList.json')
+let movieComingList = require('../static/data/Movie/movieComingList.json')
+let movieOnInfoList = require('../static/data/Movie/movieOnInfoList.json')
+
+// new end
+
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
@@ -42,7 +52,26 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
+    },
+
+
+    before(app) {
+        app.get('/api/cinemaList', (req, res) => {
+            res.json(cinemaList)
+        })
+        app.get('/api/cityList', (req, res) => {
+            res.json(cityList)
+        })
+        app.get('/api/movieComingList', (req, res) => {
+            res.json(movieComingList)
+        })
+        app.get('/api/movieOnInfoList', (req, res) => {
+            res.json(movieOnInfoList)
+        })
     }
+
+
+
   },
   plugins: [
     new webpack.DefinePlugin({

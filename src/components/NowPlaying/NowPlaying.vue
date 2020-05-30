@@ -18,7 +18,7 @@
             <div class="info_list">
               <h2 @tap="handleToDetail(item.id)">{{ item.nm }}</h2>
               <p>
-                观众评:
+                喵喵评分:
                 <span class="grade">{{ item.sc }}</span>
               </p>
               <p>主演:{{ item.star }}</p>
@@ -115,10 +115,12 @@ export default {
 }
 .movie_body .pic_show {
   width: 80px;
-  height: 100px;
+  height: 90px;
+  overflow: hidden;
 }
 .movie_body .pic_show img {
   width: 100%;
+  border-radius: 3px;
 }
 .movie_body .info_list {
   margin-left: 10px;
@@ -134,9 +136,9 @@ export default {
   text-overflow: ellipsis;
 }
 .movie_body .info_list p {
-  font-size: 13px;
+  font-size: 12px;
   color: #666;
-  line-height: 28px;
+  line-height: 20px;
   width: 150px;
   overflow: hidden;
   white-space: nowrap;

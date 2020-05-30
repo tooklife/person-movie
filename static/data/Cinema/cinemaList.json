@@ -1,0 +1,346 @@
+{
+    "msg": "ok",
+    "status": 0,
+    "data": {
+        "cinemas": [
+            {
+                "id": 232,
+                "mark": 0,
+                "nm": "UA电影城（上海梅龙镇广场店）",
+                "sellPrice": "60",
+                "addr": "静安区南京西路1038号梅龙镇广场10楼（近江宁路）",
+                "distance": "863.4km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [],
+                    "hallTypeVOList": [],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "开卡特惠，首单2张最高立减2元",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 115,
+                "mark": 0,
+                "nm": "大地影院（大华乐购店）",
+                "sellPrice": "25",
+                "addr": "宝山区大华路518号4楼（华润万家4楼）",
+                "distance": "858.7km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [],
+                    "hallTypeVOList": [],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "开卡特惠，首单1张最高立减10元",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 33,
+                "mark": 0,
+                "nm": "AMG海上明珠影城（上海莘庄店）",
+                "sellPrice": "70",
+                "addr": "闵行区沪闵路6088号莘庄凯德龙之梦购物中心4楼（近莘建路）",
+                "distance": "876.9km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [
+                        "RealD厅",
+                        "4D厅"
+                    ],
+                    "hallTypeVOList": [
+                        {
+                            "name": "RealD厅",
+                            "url": ""
+                        },
+                        {
+                            "name": "4D厅",
+                            "url": ""
+                        }
+                    ],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "开卡特惠，首单2张最高立减6元",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 52,
+                "mark": 0,
+                "nm": "左岸国际电影城（松江沃尔玛店）",
+                "sellPrice": "30",
+                "addr": "松江区松汇中路568号鹿都沃尔玛广场4楼（近庙前街）",
+                "distance": "888.8km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [],
+                    "hallTypeVOList": [],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "开卡特惠，首单2张最高立减4元",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 161,
+                "mark": 0,
+                "nm": "嘉定影剧院",
+                "sellPrice": "60",
+                "addr": "嘉定区城中路149号（城中路人民街）",
+                "distance": "846.7km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [
+                        "杜比全景声厅",
+                        "4D厅"
+                    ],
+                    "hallTypeVOList": [
+                        {
+                            "name": "杜比全景声厅",
+                            "url": ""
+                        },
+                        {
+                            "name": "4D厅",
+                            "url": ""
+                        }
+                    ],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 2444,
+                "mark": 0,
+                "nm": "万达影城（宝山万达广场店）",
+                "sellPrice": "50",
+                "addr": "宝山区一二八纪念路936号5楼（万达广场2号门直达电梯可到）",
+                "distance": "852.8km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [
+                        "IMAX厅",
+                        "4DX厅"
+                    ],
+                    "hallTypeVOList": [
+                        {
+                            "name": "IMAX厅",
+                            "url": ""
+                        },
+                        {
+                            "name": "4DX厅",
+                            "url": ""
+                        }
+                    ],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 147,
+                "mark": 0,
+                "nm": "大地影院（弘基广场店）",
+                "sellPrice": "30",
+                "addr": "宝山区聚丰园路57弄3号弘基文化休闲广场1号楼商场3楼（近上海大学）",
+                "distance": "853.9km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [],
+                    "hallTypeVOList": [],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "开卡特惠，首单1张最高立减10元",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 171,
+                "mark": 0,
+                "nm": "黄浦剧场",
+                "sellPrice": "50",
+                "addr": "黄浦区北京东路780号（近贵州路）",
+                "distance": "862.3km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [],
+                    "hallTypeVOList": [],
+                    "snack": 0,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "开卡特惠，首单2张最高立减6元",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 12,
+                "mark": 0,
+                "nm": "万达影城（江桥万达广场店）",
+                "sellPrice": "65",
+                "addr": "嘉定区金沙江西路1075号江桥万达商业广场3楼（近金运路）",
+                "distance": "862.5km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [
+                        "IMAX厅",
+                        "4DX厅"
+                    ],
+                    "hallTypeVOList": [
+                        {
+                            "name": "IMAX厅",
+                            "url": ""
+                        },
+                        {
+                            "name": "4DX厅",
+                            "url": ""
+                        }
+                    ],
+                    "snack": 1,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            },
+            {
+                "id": 162,
+                "mark": 0,
+                "nm": "新光影艺苑",
+                "sellPrice": "70",
+                "addr": "黄浦区宁波路586号（近广西北路）",
+                "distance": "862.5km",
+                "tag": {
+                    "allowRefund": 1,
+                    "buyout": 0,
+                    "cityCardTag": 0,
+                    "deal": 0,
+                    "endorse": 1,
+                    "giftTag": "",
+                    "hallType": [],
+                    "hallTypeVOList": [],
+                    "snack": 0,
+                    "vipTag": 1
+                },
+                "promotion": {
+                    "cardPromotionTag": "开卡特惠，首单2张最高立减4元",
+                    "couponPromotionTag": "",
+                    "merchantActivityTag": "",
+                    "packShowActivityTag": "",
+                    "platformActivityTag": "",
+                    "starActivityTag": ""
+                },
+                "showTimes": ""
+            }
+        ]
+    }
+}

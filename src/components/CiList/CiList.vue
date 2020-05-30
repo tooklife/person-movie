@@ -27,7 +27,7 @@
 
             <div class="card">
               <div v-for="(num,key) in item.tag "
-                   v-if="num===1"
+                   v-show="num == 1"
                    :key="key"
                    :class="key|classStyle">
                 {{key | formateCard}}
@@ -84,6 +84,7 @@ export default {
           probeType: 1
         });
       })
+      // console.log(res.data)
       this.cinemaList = res.data.data.cinemas;
     })
   },
@@ -91,11 +92,9 @@ export default {
     formateCard (key) {
       var card = [
         { key: 'allowRefund', value: '退' },
-        { key: 'cityCardTag', value: '城' },
         { key: 'deal', value: '售' },
         { key: 'endorse', value: '改签' },
         { key: 'hallTypeVOList', value: '3D' },
-        { key: 'sell', value: '卖' },
         { key: 'snack', value: '小吃' },
         { key: 'vipTag', value: '折扣卡' }
       ];
@@ -114,9 +113,8 @@ export default {
         { key: 'deal', value: 'bl' },
         { key: 'endorse', value: 'bl' },
         { key: 'hallTypeVOList', value: 'bl' },
-        { key: 'sell', value: 'or' },
         { key: 'snack', value: 'or' },
-        { key: 'vipTag', value: 'bl' }
+        { key: 'vipTag', value: 'or' }
       ];
       for (var i = 0; i < card.length; i++) {
         if (card[i].key === key) {
@@ -169,9 +167,8 @@ export default {
 }
 .cinema_body .title {
   display: inline-block;
-  margin-right: 70px;
   font-size: 14px;
-  width: 150px;
+  width: 63%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -180,12 +177,12 @@ export default {
   font-size: 12px;
   float: right;
   margin-right: 40px;
+  line-height: 19px;
 }
 .cinema_body .q {
   font-size: 11px;
-  color: #666;
   margin-right: 5px;
-  color: green;
+  color: #ef4238;
 }
 .cinema_body .price {
   font-size: 18px;
