@@ -9,7 +9,7 @@
                     品牌<i class="iconfont icon-xiala"></i>
                 </div>
                 <div class="feature_switch">
-                    特色<i class="iconfont icon-xiala"></i>
+                    火爆<i class="iconfont icon-xiala"></i>
                 </div>
             </div>
         </div>
