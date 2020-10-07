@@ -3,13 +3,17 @@
         <div id="content">
             <div class="cinema_menu">
                 <div class="city_switch">
-                    热销<i class="iconfont icon-xiala"></i>
+                    全城<i class="iconfont icon-xiala"></i>
                 </div>
                 <div class="brand_switch">
                     品牌<i class="iconfont icon-xiala"></i>
                 </div>
                 <div class="feature_switch">
+<<<<<<< HEAD
+                    火爆<i class="iconfont icon-xiala"></i>
+=======
                     热卖<i class="iconfont icon-xiala"></i>
+>>>>>>> feature-shopping
                 </div>
             </div>
         </div>
