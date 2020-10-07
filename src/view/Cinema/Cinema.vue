@@ -3,7 +3,7 @@
         <div id="content">
             <div class="cinema_menu">
                 <div class="city_switch">
-                    全城<i class="iconfont icon-xiala"></i>
+                    热销<i class="iconfont icon-xiala"></i>
                 </div>
                 <div class="brand_switch">
                     品牌<i class="iconfont icon-xiala"></i>
