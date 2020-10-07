@@ -13,7 +13,7 @@
                      class="hot_item">正在热映</router-link>
         <router-link to="/movie/comingSoon"
                      tag="div"
-                     class="hot_item">即将出演</router-link>
+                     class="hot_item">即将上映</router-link>
       </div>
       <router-link to="/movie/search"
                    tag="div"
