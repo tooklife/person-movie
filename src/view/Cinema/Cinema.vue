@@ -9,11 +9,7 @@
                     品牌<i class="iconfont icon-xiala"></i>
                 </div>
                 <div class="feature_switch">
-<<<<<<< HEAD
-                    火爆<i class="iconfont icon-xiala"></i>
-=======
                     热卖<i class="iconfont icon-xiala"></i>
->>>>>>> feature-shopping
                 </div>
             </div>
         </div>
