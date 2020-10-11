@@ -9,7 +9,7 @@
                     品牌<i class="iconfont icon-xiala"></i>
                 </div>
                 <div class="feature_switch">
-                    热销<i class="iconfont icon-xiala"></i>
+                    热门<i class="iconfont icon-xiala"></i>
                 </div>
             </div>
         </div>
