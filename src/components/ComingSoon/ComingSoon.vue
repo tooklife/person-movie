@@ -15,7 +15,7 @@
                     <h2>{{ item.nm }}</h2>
                 <p>
                     <span class="grade">{{ item.wantSee }}</span>
-                    人想看
+                    人想看拉拉啊了
                 </p>
                 <p>类型: {{item.type}}</p>
                 <p>主演:{{ item.star }}</p>
